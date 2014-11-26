@@ -69,8 +69,8 @@ LOCAL_SRC_FILES := \
         oem_iptables_hook.cpp \
         QcRouteController.cpp \
 
-
-ifeq ($(BOARD_HAS_QCOM_WLAN), true)
+ifeq ($(BOARD_HAS_QCOM_WLAN_SDK), true)
+#ifeq ($(BOARD_HAS_QCOM_WLAN), true)
   LOCAL_SRC_FILES += QsoftapCmd.cpp
   LOCAL_CFLAGS += -DQSAP_WLAN
   LOCAL_SHARED_LIBRARIES += libqsap_sdk
